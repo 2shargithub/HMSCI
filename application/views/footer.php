@@ -1,5 +1,6 @@
+   <!-- task14 -->
     <div style="clear:both;color:#aaa; padding:20px;">
-
-    	<hr /><center>&copy; <?php echo date ('Y'); ?> Hospital Management System - Developed by John Sokpo</center>
+    <!-- change the footer text -->
+    	<hr /><center>&copy; <?php echo date ('Y'); ?> UEMR System - Developed by UEL</center>
 
     </div>

@@ -18,23 +18,18 @@
 
 			</ul>
 
+
+
+
+
+
 			<div class="nav-collapse nav-collapse-top collapse">
 
 				<ul class="nav pull-right">
 
 					<li class="dropdown">
-
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo ('Account');?> <b class="caret"></b></a>
-
-					<!-- Account Selector -->
-
-                    <ul class="dropdown-menu">
-
-                    	<li class="with-image">
-
-                        	<span>
-
-                            <?php 
+					<!-- account changed to user name -->
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php 
 
 								$account_type	=	$this->session->userdata('login_type');
 
@@ -42,15 +37,35 @@
 
 								$name			=	$this->crud_model->get_type_name_by_id($account_type , $this->session->userdata($account_id) , 'name');
 
-								echo $name;
+								echo "Hello, ".$name;
+
+							?> <b class="caret"></b></a>
+
+					<!-- Account Selector -->
+
+                    <ul class="dropdown-menu">
+
+                    	<!-- <li class="with-image">
+
+                        	<span>
+
+                            <?php 
+
+								// $account_type	=	$this->session->userdata('login_type');
+
+								// $account_id		=	$account_type.'_id';
+
+								// $name			=	$this->crud_model->get_type_name_by_id($account_type , $this->session->userdata($account_id) , 'name');
+
+								// echo $name;
 
 							?>
 
                             </span>
 
-                        </li>
+                        </li> -->
 
-                    	<li class="divider"></li>
+                    	<!-- <li class="divider"></li> -->
 
 						<li><a href="<?php echo base_url();?>index.php?<?php echo $this->session->userdata('login_type');?>/manage_profile">
 
@@ -68,41 +83,41 @@
 
 				</ul>
 
-				<ul class="nav pull-right">
+				<!-- <ul class="nav pull-right">
 
 					<li class="dropdown">
 
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo ('Select Language');?><b class="caret"></b></a>
 
-					<!-- Language Selector -->
+					<!-- Language Selector 
 
                         <ul class="dropdown-menu">
 
                             <?php
 
-                            $fields = $this->db->list_fields('language');
+                            // $fields = $this->db->list_fields('language');
 
-                            foreach ($fields as $field)
+                            // foreach ($fields as $field)
 
-                            {
+                            // {
 
-                                if($field == 'phrase_id' || $field == 'phrase')continue;
+                            //     if($field == 'phrase_id' || $field == 'phrase')continue;
 
                                 ?>
 
                                     <li>
 
-                                        <a href="<?php echo base_url();?>index.php?multilanguage/select_language/<?php echo $field;?>">
+                                        <a href="<?php //echo base_url();?>index.php?multilanguage/select_language/<?php echo $field;?>">
 
-                                            <?php echo $field;?>
+                                            <?php //echo $field;?>
 
                                             <?php //selecting current language
 
-                                                if($this->session->userdata('current_language') == $field):?>
+                                              //  if($this->session->userdata('current_language') == $field):?>
 
                                                     <i class="icon-ok"></i>
 
-                                            <?php endif;?>
+                                            <?php //endif;?>
 
                                         </a>
 
@@ -110,27 +125,27 @@
 
                                 <?php
 
-                            }
+                           // }
 
                             ?>
 
                         </ul>
 
-                	<!-- Language Selector -->
+                	<!-- Language Selector 
 
 					</li>
 
-				</ul>
+				</ul> -->
 
-                <ul class="nav pull-right">
+               <!--  <ul class="nav pull-right">
 
 					<li class="dropdown">
 
-					<a href="#" ><i class="icon-user"></i><?php echo ($this->session->userdata('login_type')).' '.get_phrase('panel');?> </a>
+					<a href="#" ><i class="icon-user"></i><?php //echo ($this->session->userdata('login_type')).' '.get_phrase('panel');?> </a>
 
 					</li>
 
-				</ul>
+				</ul> -->
 
 			</div>
 
