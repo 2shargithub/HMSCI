@@ -39,12 +39,12 @@
                             <div class="control-group">
                                 <label class="control-label"><?php echo ('Department Description');?></label>
                                 <div class="controls">
-                                    <input type="text" class="" name="description" value="<?php echo $row['description'];?>"/>
+                                    <input type="text" class="validate[required]" name="description" value="<?php echo $row['description'];?>"/>
                                 </div>
                             </div>
                         </div>
                         <div class="form-actions">
-                            <button type="submit" class="btn btn-primary"><?php echo ('Edit Department');?></button>
+                            <button type="submit" class="btn btn-primary"><?php echo ('Save Department');?></button>
                         </div>
                     <?php echo form_close();?>
                     <?php endforeach;?>
@@ -101,7 +101,7 @@
                             <div class="control-group">
                                 <label class="control-label"><?php echo ('Department Description');?></label>
                                 <div class="controls">
-                                    <input type="text" class="" name="description"/>
+                                    <input type="text" class="validate[required]" name="description"/>
                                 </div>
                             </div>
                         </div>
