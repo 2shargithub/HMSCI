@@ -104,7 +104,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="address" value="<?php echo $row['address'];?>"/>
+                                    <input type="text" class="validate[required]" name="address" value="<?php echo $row['address'];?>"/>
 
                                 </div>
 
@@ -116,7 +116,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="phone" value="<?php echo $row['phone'];?>"/>
+                                    <input type="text" class="validate[required]" name="phone" value="<?php echo $row['phone'];?>"/>
 
                                 </div>
 
@@ -146,7 +146,7 @@
 
                                 <div class="controls">
 
-                                    <input type="date" class="" name="birth_date" value="<?php echo $row['birth_date'];?>"/>
+                                    <input type="date" class="validate[required]" name="birth_date" value="<?php echo $row['birth_date'];?>"/>
 
                                 </div>
 
@@ -158,7 +158,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="age" value="<?php echo $row['age'];?>"/>
+                                    <input type="text" class="validate[required]" name="age" value="<?php echo $row['age'];?>"/>
 
                                 </div>
 
@@ -198,7 +198,7 @@
 
                         <div class="form-actions">
 
-                            <button type="submit" class="btn btn-primary"><?php echo ('Edit Patient');?></button>
+                            <button type="submit" class="btn btn-primary"><?php echo ('Save Patient');?></button>
 
                         </div>
 
@@ -352,7 +352,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="address"/>
+                                    <input type="text" class="validate[required]" name="address"/>
 
                                 </div>
 
@@ -364,7 +364,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="phone"/>
+                                    <input type="text" class="validate[required]" name="phone"/>
 
                                 </div>
 
@@ -394,7 +394,7 @@
 
                                 <div class="controls">
 
-                                    <input type="date" class="" name="birth_date"/>
+                                    <input type="date" class="validate[required]" name="birth_date"/>
 
                                 </div>
 
@@ -406,7 +406,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="age"/>
+                                    <input type="text" class="validate[required]" name="age"/>
 
                                 </div>
 
