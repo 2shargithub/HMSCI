@@ -21,33 +21,7 @@
                 <div class="container-fluid">
                     <a class="brand" href="<?php echo base_url();?>"><?php echo $system_name;?></a>
                     
-                    <ul class="nav pull-right">
-                        <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Select Language <b class="caret"></b></a>
-                        <!-- Language Selector -->
-                            <ul class="dropdown-menu">
-                                <?php
-                                $fields = $this->db->list_fields('language');
-                                foreach ($fields as $field)
-                                {
-                                    if($field == 'phrase_id' || $field == 'phrase')continue;
-                                    ?>
-                                        <li>
-                                            <a href="<?php echo base_url();?>index.php?multilanguage/select_language/<?php echo $field;?>">
-                                                <?php echo $field;?>
-                                                <?php //selecting current language
-                                                    if($this->session->userdata('current_language') == $field):?>
-                                                        <i class="icon-ok"></i>
-                                                <?php endif;?>
-                                            </a>
-                                        </li>
-                                    <?php
-                                }
-                                ?>
-                            </ul>
-                        <!-- Language Selector -->
-                        </li>
-                    </ul>
+                   
                     
                 </div>
             </div>
@@ -57,7 +31,7 @@
                 <div class="padded">
                     <center>
                         <!-- <img src="<?php echo base_url();?>uploads/cdhsp.png" style="height:80px;" /> -->
-                        <h4>Hospital Management System</h4>
+                        <h4>UEMR System</h4>
                     </center>
                     <div class="login box" style="margin-top: 10px;">
                         <div class="box-header">
