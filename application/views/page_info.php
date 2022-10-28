@@ -1,3 +1,6 @@
+        <?php 
+        $account_type    =   $this->session->userdata('login_type');
+                ?>
         <div class="container-fluid" >
             <div class="row-fluid">
                 <div class="area-top clearfix">
@@ -6,6 +9,8 @@
                         <i class="icon-info-sign"></i>
                         <?php echo $page_title;?> </h3>
                     </div>
+                    <!--Hide the number panel for the user Patient - Task 17 -->
+                    <?php if($account_type != 'patient') { ?>
                     <ul class="inline pull-right sparkline-box">
                         <li class="sparkline-row">
                             <h4 class="green">
@@ -44,6 +49,7 @@
                             </h4>
                         </li>
                     </ul>
+                <?php } ?>
                 </div>
             </div>
         </div>
