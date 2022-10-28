@@ -366,7 +366,9 @@
 
                 </li>
 
-                <li class="<?php if($page_name == 'manage_language')echo 'active';?>">
+                <!-- Removed language from the side nav - task 10 -->
+
+                <!-- <li class="<?php if($page_name == 'manage_language')echo 'active';?>">
 
                   <a href="<?php echo base_url();?>index.php?admin/manage_language">
 
@@ -374,7 +376,7 @@
 
                   </a>
 
-                </li>
+                </li> -->
 
                 <li class="<?php if($page_name == 'backup_restore')echo 'active';?>">
 
