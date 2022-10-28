@@ -51,13 +51,13 @@
                             <div class="control-group">
                                 <label class="control-label"><?php echo ('Address');?></label>
                                 <div class="controls">
-                                    <input type="text" class="" name="address" value="<?php echo $row['address'];?>"/>
+                                    <input type="text" class="validate[required]" name="address" value="<?php echo $row['address'];?>"/>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label"><?php echo ('Phone');?></label>
                                 <div class="controls">
-                                    <input type="text" class="" name="phone" value="<?php echo $row['phone'];?>"/>
+                                    <input type="text" class="validate[required]" name="phone" value="<?php echo $row['phone'];?>"/>
                                 </div>
                             </div>
                             <div class="control-group">
@@ -81,13 +81,13 @@
                             <div class="control-group">
                                 <label class="control-label"><?php echo ('Profile');?></label>
                                 <div class="controls">
-                                    <input type="text" class="" name="profile" value="<?php echo $row['profile'];?>"/>
+                                    <input type="text" class="validate[required]" name="profile" value="<?php echo $row['profile'];?>"/>
                                 </div>
                             </div>
           </div>
 
                         <div class="form-actions">
-                            <button type="submit" class="btn btn-primary"><?php echo ('Edit Doctor');?></button>
+                            <button type="submit" class="btn btn-primary"><?php echo ('Save Doctor');?></button>
                         </div>
                     <?php echo form_close();?>
                     <?php endforeach;?>
@@ -161,13 +161,13 @@
                             <div class="control-group">
                                 <label class="control-label"><?php echo ('Address');?></label>
                                 <div class="controls">
-                                    <input type="text" class="" name="address"/>
+                                    <input type="text" class="validate[required]" name="address"/>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <label class="control-label"><?php echo ('Phone');?></label>
                                 <div class="controls">
-                                    <input type="text" class="" name="phone"/>
+                                    <input type="text" class="validate[required]" name="phone"/>
                                 </div>
                             </div>
                             <div class="control-group">
@@ -188,7 +188,7 @@
                             <div class="control-group">
                                 <label class="control-label"><?php echo ('Profile');?></label>
                                 <div class="controls">
-                                    <input type="text" class="" name="profile"/>
+                                    <input type="text" class="validate[required]" name="profile"/>
                                 </div>
                             </div>
                         </div>
