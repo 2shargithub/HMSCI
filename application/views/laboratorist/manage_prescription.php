@@ -167,8 +167,8 @@
                                     <td><div>#</div></th>
 
                                     <td><div><?php echo ('Report Type');?></div></td>
-
-                                    <td><div><?php echo ('Document Type');?></div></td>
+                                    <!-- Remove the field - Task 19 -->
+                                    <!-- <td><div><?php //echo ('Document Type');?></div></td> -->
 
                                     <td><div><?php echo ('Download');?></div></td>
 
@@ -200,7 +200,7 @@
 
                                     <td><?php echo $row2['report_type'];?></td>
 
-                                    <td><?php echo $row2['document_type'];?></td>
+                                    <!-- <td><?php //echo $row2['document_type'];?></td> -->
 
                                     <td style="text-align:center;">
 
@@ -280,13 +280,13 @@
 
                                     <div class="controls">
 
-                                        <input type="text" name="report_type"  /> <span class="label label-blue">report type can be x-ray, blood-test etc.</span>
+                                        <input type="text" name="report_type" class="validate[required]"  /> <span class="label label-blue">report type can be x-ray, blood-test etc.</span>
 
                                     </div>
 
                                 </div>
 
-                                <div class="control-group">
+                                <!-- <div class="control-group">
 
                                     <label class="control-label"><?php echo ('Document Type');?></label>
 
@@ -308,7 +308,7 @@
 
                                     </div>
 
-                                </div>
+                                </div> -->
 
                                 <div class="control-group">
 
@@ -316,7 +316,7 @@
 
                                     <div class="controls">
 
-                                        <input type="file" name="userfile" />
+                                        <input type="file" name="userfile" class="validate[required]" />
                                         
 
                                     </div>
@@ -329,7 +329,7 @@
 
                                     <div class="controls">
 
-                                        <textarea name="description" ></textarea>
+                                        <textarea name="description" class="validate[required]" ></textarea>
 
                                     </div>
 
