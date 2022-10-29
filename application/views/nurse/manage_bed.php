@@ -102,7 +102,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="description" value="<?php echo $row['description'];?>"/>
+                                    <input type="text" class="validate[required]" name="description" value="<?php echo $row['description'];?>"/>
 
                                 </div>
 
@@ -112,7 +112,7 @@
 
                         <div class="form-actions">
 
-                            <button type="submit" class="btn btn-primary"><?php echo ('Edit Bed');?></button>
+                            <button type="submit" class="btn btn-primary"><?php echo ('Save Bed');?></button>
 
                         </div>
 
@@ -252,7 +252,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="description"/>
+                                    <input type="text" class="validate[required]" name="description"/>
 
                                 </div>
 
