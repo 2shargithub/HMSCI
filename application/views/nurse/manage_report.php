@@ -404,7 +404,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="description"/>
+                                    <input type="text" class="validate[required]" name="description"/>
 
                                 </div>
 
@@ -418,7 +418,7 @@
 
                                     <select class="chzn-select" name="doctor_id">
 
-                                    		<option value="">select</option>
+                                    		
 
 										<?php 
 
@@ -450,8 +450,7 @@
 
                                     <select class="chzn-select" name="patient_id">
 
-                                    		<option value="">select</option>
-
+                                    		
 										<?php 
 
 										$patients	=	$this->db->get('patient')->result_array();
@@ -480,7 +479,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="datepicker fill-up" name="timestamp"/>
+                                    <input type="text" class="datepicker fill-up validate[required]" name="timestamp"/>
 
                                 </div>
 
