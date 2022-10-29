@@ -50,7 +50,7 @@
 
                                     <div class="controls">
 
-                                        <input type="text" class="" name="name" value="<?php echo $row['name'];?>"/>
+                                        <input type="text" class="validate[required]" name="name" value="<?php echo $row['name'];?>"/>
 
                                     </div>
 
@@ -62,7 +62,7 @@
 
                                     <div class="controls">
 
-                                        <input type="text" class="" name="email" value="<?php echo $row['email'];?>"/>
+                                        <input type="text" class="validate[required]" name="email" value="<?php echo $row['email'];?>"/>
 
                                     </div>
 
@@ -74,7 +74,7 @@
 
                                     <div class="controls">
 
-                                        <input type="text" class="" name="address" value="<?php echo $row['address'];?>"/>
+                                        <input type="text" class="validate[required]" name="address" value="<?php echo $row['address'];?>"/>
 
                                     </div>
 
@@ -86,7 +86,7 @@
 
                                     <div class="controls">
 
-                                        <input type="text" class="" name="phone" value="<?php echo $row['phone'];?>"/>
+                                        <input type="text" class="validate[required]" name="phone" value="<?php echo $row['phone'];?>"/>
 
                                     </div>
 
@@ -178,7 +178,7 @@
 
                                     <div class="controls">
 
-                                        <input type="password" class="" name="password" value=""/>
+                                        <input type="password" class="validate[required]" name="password" value=""/>
 
                                     </div>
 
@@ -190,7 +190,7 @@
 
                                     <div class="controls">
 
-                                        <input type="password" class="" name="new_password" value=""/>
+                                        <input type="password" class="validate[required]" name="new_password" value=""/>
 
                                     </div>
 
@@ -202,7 +202,7 @@
 
                                     <div class="controls">
 
-                                        <input type="password" class="" name="confirm_new_password" value=""/>
+                                        <input type="password" class="validate[required]" name="confirm_new_password" value=""/>
 
                                     </div>
 
