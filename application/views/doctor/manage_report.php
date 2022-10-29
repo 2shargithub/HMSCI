@@ -404,7 +404,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="description"/>
+                                    <input type="text" class="validate[required]" name="description"/>
 
                                 </div>
 
@@ -416,7 +416,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="datepicker fill-up" name="timestamp"/>
+                                    <input type="text" class="datepicker fill-up validate[required]" name="timestamp"/>
 
                                 </div>
 
@@ -428,7 +428,7 @@
 
                                 <div class="controls">
 
-                                    <select class="chzn-select" name="doctor_id">
+                                    <select class="chzn-select validate[required]" name="doctor_id">
 
                                     		<option value="">Select</option>
 
@@ -460,7 +460,7 @@
 
                                 <div class="controls">
 
-                                    <select class="chzn-select" name="patient_id">
+                                    <select class="chzn-select validate[required]" name="patient_id">
 
                                     		<option value="">Select</option>
 
