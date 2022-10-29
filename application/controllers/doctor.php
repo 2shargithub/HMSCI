@@ -209,6 +209,9 @@ class Doctor extends CI_Controller
 
 			$data['appointment_timestamp'] = strtotime($this->input->post('appointment_timestamp'));
 
+			$data['time']            = $this->input->post('time');
+
+
 			$this->db->insert('appointment', $data);
 
 			$this->session->set_flashdata('flash_message', ('Appointment Created'));
@@ -216,7 +219,7 @@ class Doctor extends CI_Controller
 			redirect(base_url() . 'index.php?doctor/manage_appointment', 'refresh');
 
 		}
-
+		//Add time field to appointment - Task 27
 		if ($param1 == 'edit' && $param2 == 'do_update') {
 
 			$data['doctor_id']             = $this->input->post('doctor_id');
@@ -224,6 +227,9 @@ class Doctor extends CI_Controller
 			$data['patient_id']            = $this->input->post('patient_id');
 
 			$data['appointment_timestamp'] = strtotime($this->input->post('appointment_timestamp'));
+
+			$data['time']            = $this->input->post('time');
+
 
 			$this->db->where('appointment_id', $param3);
 
