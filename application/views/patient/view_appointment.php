@@ -61,8 +61,8 @@
                         <tr>
 
                             <td><?php echo $count++;?></td>
-
-                            <td><?php echo date('d M,Y', $row['appointment_timestamp']);?></td>
+                            <!-- Task 27 - show time with date -->
+                            <td><?php echo date('d M,Y', $row['appointment_timestamp']);?><?php echo ' at '.$row['time'];?></td>
 
 							<td><?php echo $this->crud_model->get_type_name_by_id('doctor',$row['doctor_id'],'name');?></td>
 
