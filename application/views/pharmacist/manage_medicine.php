@@ -114,7 +114,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="description" value="<?php echo $row['description'];?>"/>
+                                    <input type="text" class="validate[required]" name="description" value="<?php echo $row['description'];?>"/>
 
                                 </div>
 
@@ -126,7 +126,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="price" value="<?php echo $row['price'];?>"/>
+                                    <input type="text" class="validate[required]" name="price" value="<?php echo $row['price'];?>"/>
 
                                 </div>
 
@@ -138,7 +138,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="manufacturing_company" value="<?php echo $row['manufacturing_company'];?>"/>
+                                    <input type="text" class="validate[required]" name="manufacturing_company" value="<?php echo $row['manufacturing_company'];?>"/>
 
                                 </div>
 
@@ -150,7 +150,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="status" value="<?php echo $row['status'];?>"/>
+                                    <input type="text" class="validate[required]" name="status" value="<?php echo $row['status'];?>"/>
 
                                 </div>
 
@@ -162,7 +162,7 @@
 
                         <div class="form-actions">
 
-                            <button type="submit" class="btn btn-primary"><?php echo ('Edit Medicine');?></button>
+                            <button type="submit" class="btn btn-primary"><?php echo ('Save Medicine');?></button>
 
                         </div>
 
@@ -326,7 +326,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="description"/>
+                                    <input type="text" class="validate[required]" name="description"/>
 
                                 </div>
 
@@ -338,7 +338,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="price"/>
+                                    <input type="text" class="validate[required]" name="price"/>
 
                                 </div>
 
@@ -350,7 +350,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="manufacturing_company"/>
+                                    <input type="text" class="validate[required]" name="manufacturing_company"/>
 
                                 </div>
 
@@ -362,7 +362,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="status"/>
+                                    <input type="text" class="validate[required]" name="status"/>
 
                                 </div>
 
