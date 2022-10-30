@@ -104,7 +104,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" name="title" value="<?php echo $row['title'];?>"/>
+                                    <input type="text" class="validate[required]" name="title" value="<?php echo $row['title'];?>"/>
 
                                 </div>
 
@@ -116,7 +116,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" name="amount" value="<?php echo $row['amount'];?>"/>
+                                    <input type="text" name="amount" class="validate[required]" value="<?php echo $row['amount'];?>"/>
 
                                 </div>
 
@@ -134,7 +134,7 @@
 
                                                 <div class="chat-message-box">
 
-                                                <textarea name="description" id="ttt" rows="5" placeholder="<?php echo ('Add Description');?>"><?php echo $row['description'];?></textarea>
+                                                <textarea name="description" id="ttt" class="validate[required]" rows="5" placeholder="<?php echo ('Add Description');?>"><?php echo $row['description'];?></textarea>
 
                                                 </div>
 
@@ -168,7 +168,7 @@
 
                         <div class="form-actions">
 
-                            <button type="submit" class="btn btn-primary"><?php echo ('Edit Invoice');?></button>
+                            <button type="submit" class="btn btn-primary"><?php echo ('Save Invoice');?></button>
 
                         </div>
 
@@ -360,7 +360,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" name="title" value=""/>
+                                    <input type="text" class="validate[required]" name="title" value=""/>
 
                                 </div>
 
@@ -372,7 +372,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" name="amount" value=""/>
+                                    <input type="text" class="validate[required]" name="amount" value=""/>
 
                                 </div>
 
@@ -390,7 +390,7 @@
 
                                                 <div class="chat-message-box">
 
-                                                <textarea name="description" id="ttt" rows="5" placeholder="<?php echo ('Add Description');?>"></textarea>
+                                                <textarea name="description" class="validate[required]" id="ttt" rows="5" placeholder="<?php echo ('Add Description');?>"></textarea>
 
                                                 </div>
 
