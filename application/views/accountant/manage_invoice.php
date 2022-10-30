@@ -229,8 +229,8 @@
                             <td class="center"><?php echo $row['invoice_id'];?></td>
 
                             <td><?php echo $row['title'];?></td>
-
-                            <td class="center"><?php echo '$'.$row['amount'];?></td>
+                            <!-- Change $ to £ - Task 20 -->
+                            <td class="center"><?php echo '£'.$row['amount'];?></td>
 
 							<td><?php echo $this->crud_model->get_type_name_by_id('patient',$row['patient_id'],'name');?></td>
 
