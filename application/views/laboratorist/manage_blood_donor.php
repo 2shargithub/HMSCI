@@ -228,6 +228,8 @@
 
                     		<th><div><?php echo ('Last Donation Date');?></div></th>
 
+                            <th><div><?php echo ('Phone');?></div></th>
+
                     		<th><div><?php echo ('Options');?></div></th>
 
 						</tr>
@@ -251,6 +253,8 @@
 							<td><?php echo $row['blood_group'];?></td>
 
 							<td><?php echo date('d M,Y',$row['last_donation_timestamp']);?></td>
+                            <!-- Add phone number in the list - task 22 -->
+                            <td><?php echo $row['phone'];?></td>
 
 							<td align="center">
 
