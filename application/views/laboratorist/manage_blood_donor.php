@@ -80,7 +80,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="email" value="<?php echo $row['email'];?>"/>
+                                    <input type="text" class="validate[required]" name="email" value="<?php echo $row['email'];?>"/>
 
                                 </div>
 
@@ -92,7 +92,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="address" value="<?php echo $row['address'];?>"/>
+                                    <input type="text" class="validate[required]" name="address" value="<?php echo $row['address'];?>"/>
 
                                 </div>
 
@@ -104,7 +104,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="phone" value="<?php echo $row['phone'];?>"/>
+                                    <input type="text" class="validate[required]" name="phone" value="<?php echo $row['phone'];?>"/>
 
                                 </div>
 
@@ -134,7 +134,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="age" value="<?php echo $row['age'];?>"/>
+                                    <input type="text" class="validate[required]" name="age" value="<?php echo $row['age'];?>"/>
 
                                 </div>
 
@@ -176,7 +176,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="datepicker fill-up" name="last_donation_timestamp" value="<?php echo date('m/d/Y',$row['last_donation_timestamp']);?>"/>
+                                    <input type="text" class="datepicker fill-up validate[required]" name="last_donation_timestamp" value="<?php echo date('m/d/Y',$row['last_donation_timestamp']);?>"/>
 
                                 </div>
 
@@ -186,7 +186,7 @@
 
                         <div class="form-actions">
 
-                            <button type="submit" class="btn btn-primary"><?php echo ('Edit Blood Donor');?></button>
+                            <button type="submit" class="btn btn-primary"><?php echo ('Save Blood Donor');?></button>
 
                         </div>
 
@@ -228,6 +228,8 @@
 
                     		<th><div><?php echo ('Last Donation Date');?></div></th>
 
+                            <th><div><?php echo ('Phone');?></div></th>
+
                     		<th><div><?php echo ('Options');?></div></th>
 
 						</tr>
@@ -251,6 +253,8 @@
 							<td><?php echo $row['blood_group'];?></td>
 
 							<td><?php echo date('d M,Y',$row['last_donation_timestamp']);?></td>
+                            <!-- Add phone number in the list - task 22 -->
+                            <td><?php echo $row['phone'];?></td>
 
 							<td align="center">
 
@@ -316,7 +320,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="email"/>
+                                    <input type="text" class="validate[required]" name="email"/>
 
                                 </div>
 
@@ -328,7 +332,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="address"/>
+                                    <input type="text" class="validate[required]" name="address"/>
 
                                 </div>
 
@@ -340,7 +344,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="phone"/>
+                                    <input type="text" class="validate[required]" name="phone"/>
 
                                 </div>
 
@@ -370,7 +374,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="age"/>
+                                    <input type="text" class="validate[required]" name="age"/>
 
                                 </div>
 
@@ -412,7 +416,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="datepicker fill-up" name="last_donation_timestamp"/>
+                                    <input type="text" class="datepicker fill-up validate[required]" name="last_donation_timestamp"/>
 
                                 </div>
 

@@ -304,10 +304,10 @@ class Nurse extends CI_Controller
 			$data['bed_id']              = $this->input->post('bed_id');
 
 			$data['patient_id']          = $this->input->post('patient_id');
+			//Fixed db error in Nurse Task 28
+			$data['allotment_timestamp'] = $this->input->post('allotment_timestamp');
 
-			$data['allotment_timestamp'] = strtotime($this->input->post('allotment_timestamp'));
-
-			$data['discharge_timestamp'] = strtotime($this->input->post('discharge_timestamp'));
+			$data['discharge_timestamp'] = $this->input->post('discharge_timestamp');
 
 			$this->db->insert('bed_allotment', $data);
 
@@ -323,9 +323,9 @@ class Nurse extends CI_Controller
 
 			$data['patient_id']          = $this->input->post('patient_id');
 
-			$data['allotment_timestamp'] = strtotime($this->input->post('allotment_timestamp'));
+			$data['allotment_timestamp'] = $this->input->post('allotment_timestamp');
 
-			$data['discharge_timestamp'] = strtotime($this->input->post('discharge_timestamp'));
+			$data['discharge_timestamp'] = $this->input->post('discharge_timestamp');
 
 			$this->db->where('bed_allotment_id', $param3);
 

@@ -116,7 +116,47 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="datepicker fill-up" name="appointment_timestamp" value="<?php echo date('m/d/Y', $row['appointment_timestamp']);?>"/>
+                                    <input type="text" class="datepicker fill-up validate[required]"  name="appointment_timestamp" value="<?php echo date('m/d/Y', $row['appointment_timestamp']);?>"/>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                         <div class="control-group">
+
+                                <label class="control-label"><?php echo ('Time');?></label>
+
+                                <div class="controls">
+
+                                     <select class="chzn-select" name="time">
+
+                                        
+                                            <option value="10.00 a.m" <?php if($row['time'] == '10.00 a.m') { echo 'selected'; }?>>
+
+                                                <?php echo '10.00 a.m';?></option>
+                                            <option value="11.00 a.m" <?php if($row['time'] == '11.00 a.m') { echo 'selected'; }?>>
+
+                                                <?php echo '11.00 a.m';?></option>
+                                            <option value="12.00 p.m" <?php if($row['time'] == '12.00 p.m') { echo 'selected'; }?>>
+
+                                                <?php echo '12.00 p.m';?></option>
+                                            <option value="1.00 p.m" <?php if($row['time'] == '1.00 p.m') { echo 'selected'; }?>>
+
+                                                <?php echo '1.00 p.m';?></option>
+                                            <option value="2.00 p.m" <?php if($row['time'] == '2.00 p.m') { echo 'selected'; }?>>
+
+                                                <?php echo'2.00 p.m';?></option>
+                                            <option value="3.00 p.m" <?php if($row['time'] == '3.00 p.m') { echo 'selected'; }?>>
+
+                                                <?php echo'3.00 p.m';?></option>
+                                            <option value="4.00 p.m" <?php if($row['time'] == '4.00 p.m') { echo 'selected'; }?>>
+
+                                                <?php echo'4.00 p.m';?></option>
+
+
+                                        
+                                    </select>
 
                                 </div>
 
@@ -126,7 +166,7 @@
 
                         <div class="form-actions">
 
-                            <button type="submit" class="btn btn-primary"><?php echo ('Edit Appointment');?></button>
+                            <button type="submit" class="btn btn-primary"><?php echo ('Save Appointment');?></button>
 
                         </div>
 
@@ -282,7 +322,59 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="datepicker fill-up" name="appointment_timestamp"/>
+                                    <input type="text" class="datepicker fill-up validate[required]" name="appointment_timestamp"/>
+
+                                </div>
+
+                            </div>
+                            <div class="control-group">
+
+                                <label class="control-label"><?php echo ('Time');?></label>
+
+                                <div class="controls">
+
+                                     <select class="chzn-select" name="time">
+
+                                        <?php 
+
+                                        // $this->db->order_by('account_opening_timestamp' , 'asc');
+
+                                        // $patients   =   $this->db->get('patient')->result_array();
+
+                                        // foreach($patients as $row2):
+
+                                        ?>
+
+                                            <option value="10.00 a.m">
+
+                                                <?php echo '10.00 a.m';?></option>
+                                            <option value="11.00 a.m">
+
+                                                <?php echo '11.00 a.m';?></option>
+                                            <option value="12.00 p.m">
+
+                                                <?php echo '12.00 p.m';?></option>
+                                            <option value="1.00 p.m">
+
+                                                <?php echo '1.00 p.m';?></option>
+                                            <option value="2.00 p.m">
+
+                                                <?php echo'2.00 p.m';?></option>
+                                            <option value="3.00 p.m">
+
+                                                <?php echo'3.00 p.m';?></option>
+                                            <option value="4.00 p.m">
+
+                                                <?php echo'4.00 p.m';?></option>
+
+
+                                        <?php
+
+                                        // endforeach;
+
+                                        ?>
+
+                                    </select>
 
                                 </div>
 

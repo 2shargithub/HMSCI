@@ -132,11 +132,11 @@
 
                             <div class="control-group">
 
-                                <label class="control-label"><?php echo ('Allotment Time');?></label>
+                                <label class="control-label"><?php echo ('Allotment Date');?></label>
 
                                 <div class="controls">
 
-                                    <input type="date" class="fill-up" name="allotment_timestamp" />
+                                    <input type="date" class="fill-up validate[required]" name="allotment_timestamp" value="<?php echo $row['allotment_timestamp'];?>" />
 
                                 </div>
 
@@ -144,11 +144,11 @@
 
                             <div class="control-group">
 
-                                <label class="control-label"><?php echo ('Discharge Time');?></label>
+                                <label class="control-label"><?php echo ('Discharge Date');?></label>
 
                                 <div class="controls">
 
-                                    <input type="date" class="fill-up" name="discharge_timestamp" />
+                                    <input type="date" class="fill-up validate[required]" name="discharge_timestamp" value="<?php echo $row['discharge_timestamp'];?>" />
 
                                 </div>
 
@@ -158,7 +158,7 @@
 
                         <div class="form-actions">
 
-                            <button type="submit" class="btn btn-primary"><?php echo ('Edit Bed Allotment');?></button>
+                            <button type="submit" class="btn btn-primary"><?php echo ('Save Bed Allotment');?></button>
 
                         </div>
 
@@ -336,11 +336,11 @@
 
                             <div class="control-group">
 
-                                <label class="control-label"><?php echo ('Allotment Time');?></label>
+                                <label class="control-label"><?php echo ('Allotment Date');?></label>
 
                                 <div class="controls">
 
-                                    <input type="date" class="fill-up" name="allotment_timestamp"/>
+                                    <input type="date" class="fill-up validate[required]" name="allotment_timestamp"/>
 
                                 </div>
 
@@ -348,11 +348,11 @@
 
                             <div class="control-group">
 
-                                <label class="control-label"><?php echo ('Discharge Time');?></label>
+                                <label class="control-label"><?php echo ('Discharge Date');?></label>
 
                                 <div class="controls">
 
-                                    <input type="date" class="fill-up" name="discharge_timestamp"/>
+                                    <input type="date" class="fill-up validate[required]" name="discharge_timestamp"/>
 
                                 </div>
 

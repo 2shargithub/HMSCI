@@ -77,8 +77,8 @@
 								<td><?php echo $count++;?></td>
 
 								<td><?php echo date('d M,Y', $row['timestamp']);?></td>
-
-								<td><?php echo '$'.$row['amount'];?></td>
+								<!-- Change $ to £ - task 20-->
+								<td><?php echo '£'.$row['amount'];?></td>
 
 								<td><?php echo $row['payment_type'];?></td>
 

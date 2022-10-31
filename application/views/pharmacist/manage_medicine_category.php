@@ -92,7 +92,7 @@
 
                         <div class="form-actions">
 
-                            <button type="submit" class="btn btn-primary"><?php echo ('Edit Medicine Category');?></button>
+                            <button type="submit" class="btn btn-primary"><?php echo ('Save Medicine Category');?></button>
 
                         </div>
 

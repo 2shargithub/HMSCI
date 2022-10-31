@@ -104,7 +104,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="address" value="<?php echo $row['address'];?>"/>
+                                    <input type="text" class="validate[required]" name="address" value="<?php echo $row['address'];?>"/>
 
                                 </div>
 
@@ -116,7 +116,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="phone" value="<?php echo $row['phone'];?>"/>
+                                    <input type="text" class="validate[required]" name="phone" value="<?php echo $row['phone'];?>"/>
 
                                 </div>
 
@@ -126,7 +126,7 @@
 
                         <div class="form-actions">
 
-                            <button type="submit" class="btn btn-primary"><?php echo ('Edit Laboratorist');?></button>
+                            <button type="submit" class="btn btn-primary"><?php echo ('Save Laboratorist');?></button>
 
                         </div>
 
@@ -276,7 +276,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="address"/>
+                                    <input type="text" class="validate[required]" name="address"/>
 
                                 </div>
 
@@ -288,7 +288,7 @@
 
                                 <div class="controls">
 
-                                    <input type="text" class="" name="phone"/>
+                                    <input type="text" class="validate[required]" name="phone"/>
 
                                 </div>
 
