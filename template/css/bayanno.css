@@ -71,8 +71,8 @@ img {
   width: auto\9;
 
   /* adjust the logo size */
-  height: 202px;
-  width:  100%;
+  height: 100px;
+  width:  50%;
 
   vertical-align: middle;
 
@@ -14175,9 +14175,9 @@ label {
 }
 
 .navbar-inverse .navbar-inner {
-  border-bottom: 3px solid rgba(0,147,173,0.7);
+  border-bottom: 3px solid rgba(0,147,173,10);
   /* background: green; */
-  background: rgba(0,147,173,0.7);
+  background: rgba(0,147,173,10);
 
   background-size: 100%;
 
@@ -14306,7 +14306,7 @@ label {
 }
 
 .navbar-inverse .nav > li > a:hover {
-  background-color: rgba(0,147,173,0.7);
+  background-color: rgba(0,147,173,1);
 }
 
 .navbar-inverse .nav > li.active > a {
