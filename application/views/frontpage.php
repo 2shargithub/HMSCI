@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>UEMR System</title>
+	<title>UEMR Hospital</title>
 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 	<!-- JavaScript Bundle with Popper -->
@@ -15,15 +15,24 @@
 <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
 <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
 <link rel="stylesheet" href="<?php echo base_url();?>template/css/main.css">
+<!-- Chat Bot - Task 5 -->
+<script>(function(w, d) { w.CollectId = "636032b470e4853cfa5ce09b"; var h = d.head || d.getElementsByTagName("head")[0]; var s = d.createElement("script"); s.setAttribute("type", "text/javascript"); s.async=true; s.setAttribute("src", "https://collectcdn.com/launcher.js"); h.appendChild(s); })(window, document);</script>
 </head>
 <body>
 
 <header>
-	<nav class="navbar navbar-expand-lg fixed-top" style="background-color: rgba(0,147,173,0.7);
+	<nav class="navbar navbar-expand-lg fixed-top" style="background-color: rgba(0,147,173,1);
     border-bottom: 2px solid rgba(0,147,173,0.7);
     border-top: 2px solid rgba(0,147,173,0.7);">
 	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">UEMR System</a>
+	    <!-- <a class="navbar-brand" href="#">UEMR System</a> -->
+	    <a href="<?php echo base_url();?>">
+
+        	<img src="<?php echo base_url();?>uploads/hmslg.png" style="height:65px; width:75px;"/>
+
+        </a> &nbsp;&nbsp;<a class="navbar-brand" href="#">UEMR Hospital</a>
+
+   
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
@@ -42,13 +51,14 @@
 	          <a class="nav-link" href="#dept">Departments</a>
 	        </li>
 	         <li class="nav-item">
-	          <a class="nav-link" href="<?php echo base_url() . 'index.php?admin/dashboard' ?>">Book an Appointment</a>
+	          <a class="nav-link" href="<?php echo base_url() . 'index.php?patientregister' ?>">Patient Register</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="<?php echo base_url() . 'index.php?admin/dashboard' ?>" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	          <a class="nav-link" href="<?php echo base_url() . 'index.php?login' ?>">
 	            Login
 	          </a>	         
 	        </li>
+
 	         <li class="nav-item">
 	          <a class="nav-link" href="#con">Contact Us</a>
 	        </li>
@@ -65,7 +75,7 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
     	<div class="carousel-caption d-md-block align-items-center">
-            <h1>Emergency Doctors</h1>
+            <h1 style="color: rgba(0,147,173,10);">Welcome to UEMR Hospital</h1>
            
          </div>
       <img src="template/images/hms.png" class="d-block w-100" alt="...">
@@ -349,7 +359,7 @@
 <footer>
 	
 	<div class="copyright text-center">
-		<p>© 2022 UEMR System - Developed by UEL</p>
+		<p>© 2022 UEMR Hospital - Developed by UEL</p>
 	</div>
 </footer>
 
