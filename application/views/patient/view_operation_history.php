@@ -64,7 +64,7 @@
 
                     		<th><div><?php echo ('Patient');?></div></th>
 
-                    		<th><div><?php echo ('Patient');?></div></th>
+                    		<!-- <th><div><?php //echo ('Patient');?></div></th> -->
 
                     		<th><div><?php echo ('Options');?></div></th>
 
@@ -92,7 +92,7 @@
 
 							<td><?php echo $this->crud_model->get_type_name_by_id('patient',$row['patient_id'],'name');?></td>
 
-							<td><?php echo $this->crud_model->get_type_name_by_id('patient',$row['patient_id'],'name');?></td>
+							<!-- <td><?php //echo $this->crud_model->get_type_name_by_id('patient',$row['patient_id'],'name');?></td> -->
 
 							<td align="center">
 
