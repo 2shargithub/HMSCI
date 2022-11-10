@@ -428,9 +428,9 @@
 
                                 <div class="controls">
 
-                                    <select class="chzn-select validate[required]" name="doctor_id">
+                                    <select class="chzn-select" name="doctor_id">
 
-                                    		<option value="">Select</option>
+                                    		<option value="0">Select</option>
 
 										<?php 
 
@@ -460,9 +460,9 @@
 
                                 <div class="controls">
 
-                                    <select class="chzn-select validate[required]" name="patient_id">
+                                    <select class="chzn-select" name="patient_id">
 
-                                    		<option value="">Select</option>
+                                    		<option value="0">Select</option>
 
 										<?php 
 

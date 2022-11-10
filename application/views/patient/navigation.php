@@ -104,22 +104,22 @@
 
         <!------blood bank----->
 
-		<li class="<?php if($page_name == 'view_blood_bank')echo 'dark-nav active';?>">
+		<!-- <li class="<?php ////if($page_name == 'view_blood_bank')echo 'dark-nav active';?>">
 
 			<span class="glow"></span>
 
-				<a href="<?php echo base_url();?>index.php?patient/view_blood_bank" >
+				<a href="<?php ////echo base_url();?>index.php?patient/view_blood_bank" >
 
 					<i class="icon-tint icon-2x"></i>
 
-					<span><?php echo ('View Blood Bank');?></span>
+					<span><?php //echo ('View Blood Bank');?></span>
 
 				</a>
 
 		</li>
 
         
-
+ -->
         <!------bed allotment----->
 
 		<li class="<?php if($page_name == 'view_admit_history')echo 'dark-nav active';?>">
