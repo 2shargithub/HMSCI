@@ -177,6 +177,42 @@ class Nurse extends CI_Controller
 
 		}
 
+
+
+		if ($param1 == 'recordvitals') {
+
+			$data['Patient_Id']                      = $this->input->post('patient_id');
+
+			$data['Date']                  = strtotime(date('Y-m-d') . ' ' . date('H:i:s'));
+
+			$data['Height']                   = $this->input->post('Height');
+
+			$data['Weight']                     = $this->input->post('Weight');
+
+			$data['Calculated_BMI']                       = $this->input->post('Calculated_BMI');
+
+			$data['Temperature']                = $this->input->post('Temperature');
+
+			$data['Pulse']                       = $this->input->post('Pulse');
+
+			$data['Respiratory_Rate']               = $this->input->post('Respiratory_Rate');
+
+			$data['Blood_Pressure']               = $this->input->post('Blood_Pressure');
+
+			$data['Blood_Oxygen_Saturation']               = $this->input->post('Blood_Oxygen_Saturation');
+
+
+			$this->db->insert('vitals', $data);
+
+			//$this->email_model->account_opening_email('patient', $data['email']); //SEND EMAIL ACCOUNT OPENING EMAIL
+
+			$this->session->set_flashdata('flash_message', ('Vitals Recorded'));
+
+			redirect(base_url() . 'index.php?nurse/manage_patient', 'refresh');
+
+		}
+
+
 		$page_data['page_name']  = 'manage_patient';
 
 		$page_data['page_title'] = ('Manage Patient');
@@ -184,6 +220,9 @@ class Nurse extends CI_Controller
 		$page_data['patients']   = $this->db->get('patient')->result_array();
 
 		$this->load->view('index', $page_data);
+
+		
+
 
 	}
 

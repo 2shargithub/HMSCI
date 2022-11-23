@@ -204,6 +204,96 @@
 
                     <?php echo form_close();?>
 
+
+
+                    <!---------Patient Vitals REPORTS----------->
+
+                    <hr />
+
+                    <div class="box">
+
+                    <div class="box-header"><span class="title"><?php echo ('Patient Vitals');?></span></div>
+
+                    <div class="box-content">
+
+                        <table cellpadding="0" cellspacing="0" border="0" class="table table-normal ">
+
+                            <thead>
+
+                                <tr>
+
+                                    <td><div>#</div></td>
+
+                                    <td><div><?php echo ('Date');?></div></td>
+
+                                    <td><div><?php echo ('Height');?></div></td>
+
+                                    <td><div><?php echo ('Weight');?></div></td>
+
+                                    <td><div><?php echo ('Calculated BMI');?></div></td>
+
+                                    <td><div><?php echo ('Temperature');?></div></td>
+
+                                    <td><div><?php echo ('Pulse');?></div></td>
+
+                                    <td><div><?php echo ('Respiratory Rate');?></div></td>
+
+                                    <td><div><?php echo ('Blood Pressure');?></div></td>
+
+                                    <td><div><?php echo ('Blood Oxygen Saturation');?></div></td>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <?php 
+
+                                $count = 1;
+
+                                $vitals_reports =   $this->db->get_where('vitals' , array('Patient_Id' => $row['patient_id']))->result_array();
+
+                                foreach($vitals_reports as $row2):?>
+
+                                <tr>
+                                    <td><?php echo $count++;?></td>
+
+                                    <td><?php echo date('d M,Y', $row2['Date']);?></td>
+
+                                    <td><?php echo $row2['Height'];?></td>
+
+                                    <td><?php echo $row2['Weight'];?></td>
+
+                                    <td> <?php echo $row2['Calculated_BMI'];?>                                   
+
+                                    </td>
+
+                                    <td><?php echo $row2['Temperature'];?></td>
+
+                                    <td><?php echo $row2['Pulse'];?></td>
+                                    <td><?php echo $row2['Respiratory_Rate'];?></td>
+                                    <td><?php echo $row2['Blood_Pressure'];?></td>
+                                    <td><?php echo $row2['Blood_Oxygen_Saturation'];?></td>
+
+                                    
+
+                                </tr>
+
+                                <?php endforeach;?>
+
+                            </tbody>
+
+                        </table>
+
+                     </div>
+
+                     </div> 
+
+                    <!-------Patient vitals REPORTS ENDS------->
+
+                    
+
                     <?php endforeach;?>
 
                 </div>

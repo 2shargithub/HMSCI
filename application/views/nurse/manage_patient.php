@@ -35,6 +35,13 @@
 					<?php echo ('Add Patient');?>
 
                     	</a></li>
+                        <li>
+
+                <a href="#vitals" data-toggle="tab"><i class="icon-plus"></i>
+
+                    <?php echo ('Record Vitals');?>
+
+                        </a></li>
 
 		</ul>
 
@@ -203,6 +210,92 @@
                         </div>
 
                     <?php echo form_close();?>
+
+                    <!---------Patient Vitals REPORTS----------->
+
+                    <hr />
+
+                    <div class="box">
+
+                    <div class="box-header"><span class="title"><?php echo ('Patient Vitals');?></span></div>
+
+                    <div class="box-content">
+
+                        <table cellpadding="0" cellspacing="0" border="0" class="table table-normal ">
+
+                            <thead>
+
+                                <tr>
+
+                                    <td><div>#</div></td>
+
+                                    <td><div><?php echo ('Date');?></div></td>
+
+                                    <td><div><?php echo ('Height');?></div></td>
+
+                                    <td><div><?php echo ('Weight');?></div></td>
+
+                                    <td><div><?php echo ('Calculated BMI');?></div></td>
+
+                                    <td><div><?php echo ('Temperature');?></div></td>
+
+                                    <td><div><?php echo ('Pulse');?></div></td>
+
+                                    <td><div><?php echo ('Respiratory Rate');?></div></td>
+
+                                    <td><div><?php echo ('Blood Pressure');?></div></td>
+
+                                    <td><div><?php echo ('Blood Oxygen Saturation');?></div></td>
+
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <?php 
+
+                                $count = 1;
+
+                                $vitals_reports =   $this->db->get_where('vitals' , array('Patient_Id' => $row['patient_id']))->result_array();
+
+                                foreach($vitals_reports as $row2):?>
+
+                                <tr>
+                                    <td><?php echo $count++;?></td>
+
+                                    <td><?php echo date('d M,Y', $row2['Date']);?></td>
+
+                                    <td><?php echo $row2['Height'];?></td>
+
+                                    <td><?php echo $row2['Weight'];?></td>
+
+                                    <td> <?php echo $row2['Calculated_BMI'];?>                                   
+
+                                    </td>
+
+                                    <td><?php echo $row2['Temperature'];?></td>
+
+                                    <td><?php echo $row2['Pulse'];?></td>
+                                    <td><?php echo $row2['Respiratory_Rate'];?></td>
+                                    <td><?php echo $row2['Blood_Pressure'];?></td>
+                                    <td><?php echo $row2['Blood_Oxygen_Saturation'];?></td>
+
+                                    
+
+                                </tr>
+
+                                <?php endforeach;?>
+
+                            </tbody>
+
+                        </table>
+
+                     </div>
+
+                     </div> 
+
+                    <!-------Patient vitals REPORTS ENDS------->
 
                     <?php endforeach;?>
 
@@ -457,7 +550,160 @@
 			</div>
 
 			<!----CREATION FORM ENDS--->
+             <!---- Record Vitals STARTS---->
+            <div class="tab-pane box" id="vitals" style="padding: 5px">
 
+                <div class="box-content">
+
+                    <?php echo form_open('nurse/manage_patient/recordvitals/' , array('class' => 'form-horizontal validatable'));?>
+
+                        <div class="padded">
+
+                            <div class="control-group">
+
+                                <label class="control-label"><?php echo ('Patient');?></label>
+
+                                <div class="controls">
+
+                                    <select class="chzn-select" name="patient_id">
+
+                                        <?php 
+
+                                        $this->db->order_by('account_opening_timestamp' , 'asc');
+
+                                        $patients   =   $this->db->get('patient')->result_array();
+
+                                        foreach($patients as $row2):
+
+                                        ?>
+
+                                            <option value="<?php echo $row2['patient_id'];?>" <?php if($row2['patient_id'] == $row['patient_id'])echo 'selected';?>>
+
+                                                <?php echo $row2['name'];?></option>
+
+                                        <?php
+
+                                        endforeach;
+
+                                        ?>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                            
+                            <div class="control-group">
+
+                                <label class="control-label"><?php echo ('Height(CM)');?></label>
+
+                                <div class="controls">
+
+                                    <input type="text" class="validate[required]" name="Height"/>
+
+                                </div>
+
+                            </div>
+
+                            <div class="control-group">
+
+                                <label class="control-label"><?php echo ('Weight(KG)');?></label>
+
+                                <div class="controls">
+
+                                    <input type="text" class="validate[required]" name="Weight"/>
+
+                                </div>
+
+                            </div>
+
+                            <div class="control-group">
+
+                                <label class="control-label"><?php echo ('Calculated BMI');?></label>
+
+                                <div class="controls">
+
+                                    <input type="text" class="validate[required]" name="Calculated_BMI"/>
+
+                                </div>
+
+                            </div>
+
+                            <div class="control-group">
+
+                                <label class="control-label"><?php echo ('Temperature(C)');?></label>
+
+                                <div class="controls">
+
+                                    <input type="text" class="validate[required]" name="Temperature"/>
+
+                                </div>
+
+                            </div>
+
+                            <div class="control-group">
+
+                                <label class="control-label"><?php echo ('Pulse/Min');?></label>
+
+                                <div class="controls">
+
+                                    <input type="text" class="validate[required]" name="Pulse"/>
+
+                                </div>
+
+                            </div>
+
+                            <div class="control-group">
+
+                                <label class="control-label"><?php echo ('Respiratory Rate/min');?></label>
+
+                                <div class="controls">
+
+                                    <input type="text" class="validate[required]" name="Respiratory_Rate"/>
+
+                                </div>
+
+                            </div>
+                            <div class="control-group">
+
+                                <label class="control-label"><?php echo ('Blood Pressure');?></label>
+
+                                <div class="controls">
+
+                                    <input type="text" class="validate[required]" name="Blood_Pressure"/> 
+
+                                </div>
+
+                            </div>
+                            <div class="control-group">
+
+                                <label class="control-label"><?php echo ('Blood Oxygen Saturation');?></label>
+
+                                <div class="controls">
+
+                                    <input type="text" class="validate[required]" 
+                                    name="Blood_Oxygen_Saturation"/>
+
+                                </div>
+
+                                </div>
+
+                        </div>
+
+                        <div class="form-actions">
+
+                            <button type="submit" class="btn btn-success"><?php echo ('Add Vitals');?></button>
+
+                        </div>
+
+                    <?php echo form_close();?>                
+
+                </div>                
+
+            </div>
+
+            <!----Record Vitals ENDS--->
             
 
 		</div>
