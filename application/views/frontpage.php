@@ -59,9 +59,9 @@
 	          </a>	         
 	        </li>
 
-	         <li class="nav-item">
+	         <!-- <li class="nav-item">
 	          <a class="nav-link" href="#con">Contact Us</a>
-	        </li>
+	        </li> -->
 	      </ul>
 	     <!--  <form class="d-flex" role="search">
 	        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -96,15 +96,15 @@
 		<div class="row">
 			<div class="col-12 col-md 4 col-lg-4">
 				<p><i class="fas fa-phone" style=" font-weight: 600;color:#08529c"></i>&nbsp;Place a call through today</p>
-					<span style="margin-left: 16px;">&nbsp;00000000</span>
+					<span style="margin-left: 16px;">&nbsp;020 7946 0000</span>
 			</div>
 			<div class="col-12 col-md 4 col-lg-4">
 				<p><i class="fas fa-comments"style=" font-weight: 600;color:#08529c"></i>&nbsp;Chat with us today</p>
-				<span style="margin-left: 16px;">&nbsp;abc@gmail.com</span>
+				<span style="margin-left: 16px;">&nbsp;enquiry@uemr.com</span>
 			</div>
 			<div class="col-12 col-md 4 col-lg-4">
 				<p><i class="fas fa-location-arrow"style=" font-weight: 600;color:#08529c"></i>&nbsp;Vist our Location</p>
-				<span style="margin-left: 16px;">&nbsp;Somewhwre in Nigeria</span>
+				<span style="margin-left: 16px;">&nbsp;East London</span>
 			</div>
 		</div>
 	</div>
@@ -115,7 +115,7 @@
 		<h2>About US</h2>
 		<div class="row">
 		<div class="col-12 col-md-12 col-lg-12">
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+			<p>We offer a full range of local and specialist services, which includes one of the largest hospitals in the UK with one of London's busiest accident and emergency departments. Home to London's Air Ambulance, The UEMR hospital is also one of the capital's leading trauma and emergency care centres and hyper-acute stroke centres.</p>
 		</div>	
 		
 		</div>
@@ -126,11 +126,22 @@
 	<div class="container">
 		<h2>Our Doctors</h2>
 			<div class="owl-carousel owl-theme" id="owl-one">
-		  <div class="item">
+		  <div class="item" style="height: 25rem;">
 		   	<div class="card" style="width: 16rem;">
-		   	  <img src="template/images/dr.png" class="card-img-top" alt="...">
+		   	  <img src="template/images/dr.png" class="card-img-top" style="height: 250px;" alt="...">
 		   	  <div class="card-body">
-		   	    <h5 class="card-title">Dr. ABC </h5>
+		   	    <h5 class="card-title">Dr. Daniel </h5>
+		   	    <p class="card-text">Physician</p>
+		   	   <!--  <a href="#" class="btn btn-primary">Go </a> -->
+		   	  </div>
+		   	</div>
+		   	
+		   </div>
+		   <div class="item" style="height: 25rem;">
+		   	<div class="card" style="width: 16rem;">
+		   	  <img src="template/images/dr1.jpg" class="card-img-top" style="height: 250px;" alt="...">
+		   	  <div class="card-body">
+		   	    <h5 class="card-title">Dr. Kris Mick </h5>
 		   	    <p class="card-text">Physician</p>
 		   	   <!--  <a href="#" class="btn btn-primary">Go </a> -->
 		   	  </div>
@@ -138,21 +149,10 @@
 		   	
 		   </div>
 		   <div class="item">
-		   	<div class="card" style="width: 16rem;">
-		   	  <img src="template/images/dr.png" class="card-img-top" alt="...">
-		   	  <div class="card-body">
-		   	    <h5 class="card-title">Dr. ABC </h5>
-		   	    <p class="card-text">Physician</p>
-		   	   <!--  <a href="#" class="btn btn-primary">Go </a> -->
-		   	  </div>
-		   	</div>
-		   	
-		   </div>
-		   <div class="item">
 		    	<div class="card" style="width: 16rem;">
-		    	  <img src="template/images/dr.png" class="card-img-top" alt="...">
+		    	  <img src="template/images/dr2.jpg" class="card-img-top" style="height: 250px;" alt="...">
 		    	  <div class="card-body">
-		    	    <h5 class="card-title">Dr. ABC </h5>
+		    	    <h5 class="card-title">Dr. Michel </h5>
 		    	    <p class="card-text">Physician</p>
 		    	   <!--  <a href="#" class="btn btn-primary">Go </a> -->
 		    	  </div>
@@ -161,37 +161,16 @@
 		    </div>
 		    <div class="item">
 		    	<div class="card" style="width: 16rem;">
-		    	  <img src="template/images/dr.png" class="card-img-top" alt="...">
+		    	  <img src="template/images/dr3.jpg" class="card-img-top" style="height: 250px;" alt="...">
 		    	  <div class="card-body">
-		    	    <h5 class="card-title">Dr. ABC </h5>
+		    	    <h5 class="card-title">Dr. Dyana Kris </h5>
 		    	    <p class="card-text">Physician</p>
 		    	   <!--  <a href="#" class="btn btn-primary">Go </a> -->
 		    	  </div>
 		    	</div>
 		    	
 		    </div>
-		    <div class="item">
-		    	<div class="card" style="width: 16rem;">
-		    	  <img src="template/images/dr.png" class="card-img-top" alt="...">
-		    	  <div class="card-body">
-		    	    <h5 class="card-title">Dr. ABC </h5>
-		    	    <p class="card-text">Physician</p>
-		    	   <!--  <a href="#" class="btn btn-primary">Go </a> -->
-		    	  </div>
-		    	</div>
-		    	
-		    </div>
-		    <div class="item">
-		    	<div class="card" style="width: 16rem;">
-		    	  <img src="template/images/dr.png" class="card-img-top" alt="...">
-		    	  <div class="card-body">
-		    	    <h5 class="card-title">Dr. ABC </h5>
-		    	    <p class="card-text">Physician</p>
-		    	   <!--  <a href="#" class="btn btn-primary">Go </a> -->
-		    	  </div>
-		    	</div>
-		    	
-		    </div>
+		    
 		    
 		</div>
 	</div>
@@ -211,7 +190,25 @@
 				     </div>
 				     <div class="col-md-8">
 				       <div class="card-body">
-				         <h5 class="card-title">Cardiology6</h5>
+				         <h5 class="card-title">Cardiology</h5>
+				         <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
+				         <!--  <a href="#" class="btn btn-primary">Go </a> -->
+				       </div>
+				     </div>
+
+				   </div>
+				 </div>
+				</div>
+				
+				<div class="item">
+				 <div class="card mb-3" style="max-width: 540px;">
+				   <div class="row g-0">
+				     <div class="col-md-4">
+				       <img src="template/images/dep1.png" class="img-fluid rounded-start" alt="...">
+				     </div>
+				     <div class="col-md-8">
+				       <div class="card-body">
+				         <h5 class="card-title">Gynecology</h5>
 				         <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
 				         <!--  <a href="#" class="btn btn-primary">Go </a> -->
 				       </div>
@@ -228,7 +225,7 @@
 				     </div>
 				     <div class="col-md-8">
 				       <div class="card-body">
-				         <h5 class="card-title">Cardiology5</h5>
+				         <h5 class="card-title">Neurology</h5>
 				         <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
 				         <!--  <a href="#" class="btn btn-primary">Go </a> -->
 				       </div>
@@ -245,7 +242,7 @@
 				     </div>
 				     <div class="col-md-8">
 				       <div class="card-body">
-				         <h5 class="card-title">Cardiology4</h5>
+				         <h5 class="card-title">Nephrology</h5>
 				         <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
 				         <!--  <a href="#" class="btn btn-primary">Go </a> -->
 				       </div>
@@ -254,106 +251,13 @@
 				   </div>
 				 </div>
 				</div>
-				<div class="item">
-				 <div class="card mb-3" style="max-width: 540px;">
-				   <div class="row g-0">
-				     <div class="col-md-4">
-				       <img src="template/images/dep1.png" class="img-fluid rounded-start" alt="...">
-				     </div>
-				     <div class="col-md-8">
-				       <div class="card-body">
-				         <h5 class="card-title">Cardiology3</h5>
-				         <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-				         <!--  <a href="#" class="btn btn-primary">Go </a> -->
-				       </div>
-				     </div>
-
-				   </div>
-				 </div>
-				</div>
-				<div class="item">
-				 <div class="card mb-3" style="max-width: 540px;">
-				   <div class="row g-0">
-				     <div class="col-md-4">
-				       <img src="template/images/dep1.png" class="img-fluid rounded-start" alt="...">
-				     </div>
-				     <div class="col-md-8">
-				       <div class="card-body">
-				         <h5 class="card-title">Cardiology2</h5>
-				         <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-				         <!--  <a href="#" class="btn btn-primary">Go </a> -->
-				       </div>
-				     </div>
-
-				   </div>
-				 </div>
-				</div>
-				<div class="item">
-				 <div class="card mb-3" style="max-width: 540px;">
-				   <div class="row g-0">
-				     <div class="col-md-4">
-				       <img src="template/images/dep1.png" class="img-fluid rounded-start" alt="...">
-				     </div>
-				     <div class="col-md-8">
-				       <div class="card-body">
-				         <h5 class="card-title">Cardiology1</h5>
-				         <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
-				         <!--  <a href="#" class="btn btn-primary">Go </a> -->
-				       </div>
-				     </div>
-
-				   </div>
-				 </div>
-				</div>
+				
 
 			</div>
 	</div>
 						
 </section>
-	<section class="contact" id="con">
-		<div class="container">
-			<h2>Contact Us</h2>
-			<form class="row g-3 needs-validation" novalidate>
-			  <div class="col-md-6">
-			    <label for="validationCustom01" class="form-label">First Name</label>
-			    <input type="text" class="form-control" id="validationCustom01" value="Your First name" required>
-			    <div class="valid-feedback">
-			      Looks good!
-			    </div>
-			  </div>
-			  <div class="col-md-6">
-			    <label for="validationCustom02" class="form-label">Last Name</label>
-			    <input type="text" class="form-control" id="validationCustom02" value="Your Last name" required>
-			    <div class="valid-feedback">
-			      Looks good!
-			    </div>
-			  </div>
-			  <div class="col-md-6">
-			    <label for="validationCustomUsername" class="form-label">Email</label>
-			    <div class="input-group has-validation">
-			      <input type="text" class="form-control" id="validationCustomUsername" value="Your Email" aria-describedby="inputGroupPrepend" required>
-			      <div class="invalid-feedback">
-			        Please choose a username.
-			      </div>
-			    </div>
-			  </div>
-			  <div class="col-md-6">
-			    <label for="validationCustomPhone" class="form-label">Phone Number</label>
-			    <input type="tel" class="form-control" id="validationCustomPhone" value="Your Number" required>
-			    <div class="valid-feedback">
-			      Looks good!
-			    </div>
-			  </div>			
-			  <div class="mb-3">
-			    <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
-			    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-			  </div>
-			  <div class="col-12">
-			    <button class="btn btn-primary" type="submit">Submit</button>
-			  </div>
-			</form>
-		</div>
-	</section>
+	
 
 
 <footer>
